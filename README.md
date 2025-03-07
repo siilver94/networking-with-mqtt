@@ -1,38 +1,35 @@
-# Networking With MQTT
+# 🚀 Golang 기반 MQTT 통신 프로젝트  
 
-<br/>
+## 📌 프로젝트 소개  
+**"Golang과 MQTT를 활용한 실시간 메시징 및 REST API 연동"**  
 
-## 프로젝트 소개
+이 프로젝트는 **Golang**을 사용하여 **MQTT 프로토콜**을 기반으로 한 통신 환경을 구축하는 것을 목표로 합니다.  
+또한, **REST API(Kakao Map API)**를 활용하여 데이터를 주고받으며, 실시간 메시지 전송 및 위치 데이터를 처리하는 방식을 학습합니다.  
 
-개발 과정에 있어서 필요에 의해 가장 중요할 수 있는 요소중 하나가 통신 입니다.
+---
 
-이번 과제는 다양한 통신 프로토콜중 **MQTT프로토콜**을 사용하여 프로토콜의 특징과 구축, 연동방법을 학습하는 것 입니다.
-더 나아가 통신 프로토콜 뿐만아니라 **restAPI** 를 사용하여 자원을 주고 받을 것입니다.
-이번 프로젝트에선 **Golang** 언어와 **MQTT** 프로토콜을 연동하여 통신 것이 목표입니다.
+## 🔧 주요 기술 및 개념  
+✔ **Golang** – 빠르고 가벼운 네트워크 프로그래밍 지원  
+✔ **MQTT** – IoT 및 M2M을 위한 경량 메시징 프로토콜  
+✔ **Mosquitto (MQTT Broker)** – 메시지 중계를 담당하는 브로커  
+✔ **REST API** – Kakao Map API를 사용하여 좌표 및 주소 변환  
 
-<br/>
+---
 
-## 프로젝트 구조
+## 📂 프로젝트 구조  
+📌 **구성 요소 설명**  
+- **MQTT Broker**: Mosquitto를 사용하여 메시지 중계  
+- **Publisher**: 특정 Topic에 메시지를 발행  
+- **Subscriber**: Topic을 구독하여 메시지를 수신  
+- **REST API 연동**: Kakao Map API를 활용하여 좌표 변환  
 
-**MQTT** 중계자 역할인 **Broker**를 설정하고 본인과 상대방과의 통신을 합니다.
+---
 
-작은 코드 공간이 필요하거나 네트워크 대역폭이 제한되는 원격 위치와의 연결을 위해 설계된 **MQTT 메세징 프로토콜** 과 **Golang** 을 연동하여 
-통신환경을 구축 할 것입니다.
+## 🌐 MQTT란?  
+**MQTT(Message Queuing Telemetry Transport)**는 M2M 및 IoT 환경을 위한 경량 메시징 프로토콜입니다.  
+TCP/IP 위에서 동작하며, 저전력 환경에서 효율적인 통신을 제공하는 것이 특징입니다.  
 
-그 후, 네트워크 기반 아키텍처인 **RestAPI** 를 사용하여 데이터를 주고 받습니다.
-**GoLang** 과 **MQTT**를 연동하여 간단한 메세지, 혹은 함수를 보내보고, **KAKAO MAP RestAPI** 에서 좌표를 얻고 그 좌표로 도로명과 주소를 구해 원하는 정보를 얻습니다.
-
-<br/>
-
-### MQTT 란?
-**MQTT**는 M2M, IOT를 위한 프로토콜로서, 최소한의 전력과 패킷량으로 통신하는 프로토콜입니다. 따라서 IOT와 모바일 어플리케이션 등의 통신에 매우 적합한 프로토콜입니다.
-MQTT는 HTTP, TCP등의 통신과 같이 클라이언트-서버 구조로 이루어지는 것이 아닌, Broker, Publisher, Subscriber 구조로 이루어집니다.
-
-![1_lKWgSNIYc1Pil5FFoAHMkA](https://user-images.githubusercontent.com/57824945/87271082-2426f100-c50d-11ea-9c56-443b2ff4034c.png)
-
-
-Publisher는 Topic을 발행(publish) 하고, Subscriber는 Topic에 구독(subscribe)합니다. 
-Broker는 이들을 중계하는 역할을 하며, 단일 Topic에 여러 Subscriber가 구독할 수 있기 때문에, 1:N 통신 구축에도 매우 유용합니다.
-
-*출처 : https://medium.com/@jspark141515/mqtt%EB%9E%80-314472c246ee*
-
+MQTT의 주요 구성 요소:  
+- **Broker** 🏢: 메시지를 중계하는 서버 (예: Mosquitto)  
+- **Publisher** 📤: 메시지를 특정 Topic에 발행하는 클라이언트  
+- **Subscriber** 📥: Topic을 구독하여 메시지를 수신하는 클라이언트  
