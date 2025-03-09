@@ -1,6 +1,6 @@
-# 🚀 Golang 기반 MQTT 통신 프로젝트  
+#  Golang 기반 MQTT 통신 프로젝트  
 
-## 📌 프로젝트 소개  
+##  프로젝트 소개  
 **"Golang과 MQTT를 활용한 실시간 메시징 및 REST API 연동"**  
 
 이 프로젝트는 **Golang**을 사용하여 **MQTT 프로토콜**을 기반으로 한 통신 환경을 구축하는 것을 목표로 합니다.  
@@ -8,7 +8,7 @@
 
 ---
 
-## 🔧 주요 기술 및 개념  
+##  주요 기술 및 개념  
 ✔ **Golang** – 빠르고 가벼운 네트워크 프로그래밍 지원  
 ✔ **MQTT** – IoT 및 M2M을 위한 경량 메시징 프로토콜  
 ✔ **Mosquitto (MQTT Broker)** – 메시지 중계를 담당하는 브로커  
@@ -16,8 +16,8 @@
 
 ---
 
-## 📂 프로젝트 구조  
-📌 **구성 요소 설명**  
+##  프로젝트 구조  
+ **구성 요소 설명**  
 - **MQTT Broker**: Mosquitto를 사용하여 메시지 중계  
 - **Publisher**: 특정 Topic에 메시지를 발행  
 - **Subscriber**: Topic을 구독하여 메시지를 수신  
@@ -25,7 +25,7 @@
 
 ---
 
-## 🌐 MQTT란?  
+##  MQTT란?  
 **MQTT(Message Queuing Telemetry Transport)**는 M2M 및 IoT 환경을 위한 경량 메시징 프로토콜입니다.  
 TCP/IP 위에서 동작하며, 저전력 환경에서 효율적인 통신을 제공하는 것이 특징입니다.  
 
