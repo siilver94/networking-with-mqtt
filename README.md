@@ -9,10 +9,10 @@
 ---
 
 ##  주요 기술 및 개념  
-✔ **Golang** – 빠르고 가벼운 네트워크 프로그래밍 지원  
-✔ **MQTT** – IoT 및 M2M을 위한 경량 메시징 프로토콜  
-✔ **Mosquitto (MQTT Broker)** – 메시지 중계를 담당하는 브로커  
-✔ **REST API** – Kakao Map API를 사용하여 좌표 및 주소 변환  
+-  **Golang** – 빠르고 가벼운 네트워크 프로그래밍 지원  
+-  **MQTT** – IoT 및 M2M을 위한 경량 메시징 프로토콜  
+-  **Mosquitto (MQTT Broker)** – 메시지 중계를 담당하는 브로커  
+-  **REST API** – Kakao Map API를 사용하여 좌표 및 주소 변환  
 
 ---
 
@@ -26,7 +26,7 @@
 ---
 
 ##  MQTT란?  
-**MQTT(Message Queuing Telemetry Transport)**는 M2M 및 IoT 환경을 위한 경량 메시징 프로토콜입니다.  
+**MQTT(Message Queuing Telemetry Transport)** 는 M2M 및 IoT 환경을 위한 경량 메시징 프로토콜입니다.  
 TCP/IP 위에서 동작하며, 저전력 환경에서 효율적인 통신을 제공하는 것이 특징입니다.  
 
 MQTT의 주요 구성 요소:  
